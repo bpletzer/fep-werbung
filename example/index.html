@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/main.css" />
+
+
+<script src="js/almond.js"></script>
+<script src="js/hidden.js"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.available.js"></script>
+
+<!---->
+
+<script type="text/javascript">
+/*require([], function($$){
+	console.log($$)
+})*/
+jQuery('.cdw-a').available(function(){
+	cwd.push(['cmd', this[0], isHidden(this[0])])
+}, true, true)
+</script>
+</head>
+<body>
+
+top<br>
+
+<div class="cdw cdw-top">cdw-top<script>cwd=window.cwd||[];cwd.push(["cmd","top","v2"])</script></div>
+
+<div class="cdw-a cdw-topp">cdw-topp</div>
+
+middle<br>
+
+<div class="cdw cdw-middle">cdw-middle<script>cwd=cwd||[];cwd.push(["cmd","middle","v2"])</script></div>
+
+bottom<br>
+
+<script src="js/queue.js"></script>
+
+<div class="cdw cdw-bottom">cdw-bottom, hidden below 400px<script>cwd=cwd||[];cwd.push(["cmd","bottom","v2"])</script></div>
+
+
+<div class="cdw-a cdw-bottomm">cdw-bottomm, hidden below 400px</div>
+</body>
+</html>
